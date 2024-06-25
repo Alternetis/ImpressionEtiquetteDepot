@@ -1,0 +1,79 @@
+﻿<Window x:Class="ImpressionEtiquetteDepot.Configuration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImpressionEtiquetteDepot"
+        mc:Ignorable="d"
+        Icon="Images/Icon.ico"
+        Title="Configuration Impression Etiquette Depot" MinHeight="450" MinWidth="800" Height="450" Width="800"  WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="0.1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="0.2*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Column="1" HorizontalAlignment="Center"  VerticalAlignment="Center" 
+               Content="Configuration Impression Etiquette" FontSize="30" FontWeight="Bold"></Label>
+        <Grid Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="0.2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="SageConnection " VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="18"></Label>
+            <TextBox Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" FontSize="20" Name="SageConnexion"></TextBox>
+            <Button Grid.Row="0" Grid.Column="2" Margin="2" FontSize="20" Content="Tester" Name="SageConnexionTest"
+                    Background="White" Foreground="CadetBlue" BorderBrush="CadetBlue" VerticalAlignment="Center" Click="SageConnexionTest_Click"></Button>
+            
+            <Label Grid.Row="1" Grid.Column="0" Content="EasyLogisticConnection " VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="18"></Label>
+            <TextBox Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" FontSize="20" Name="EasyConnexion"></TextBox>
+            <Button Grid.Row="1" Grid.Column="2" Margin="2" FontSize="20" Content="Tester"  Name="EasyConnexionTest"
+                    Background="White" Foreground="CadetBlue" BorderBrush="CadetBlue" VerticalAlignment="Center" Click="EasyConnexionTest_Click"></Button>
+
+            <Border Grid.Row="2" Grid.RowSpan="3" Grid.ColumnSpan="3" BorderThickness="2" BorderBrush="CadetBlue" CornerRadius="10" Background="#FFE6E6E6">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" Content="Calcul prix spécifique" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"></Label>
+                    <Label Grid.Row="1" Grid.Column="0" Content="Catégorie Tarifaire" 
+                           VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="18"></Label>
+                    <TextBox Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" FontSize="18" Name="SpCategorie"></TextBox >
+                    <Label Grid.Row="2" Grid.Column="0" Content="Coéficient" 
+                           VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="18"></Label>
+                    <TextBox Grid.Column="1" Grid.Row="2" VerticalAlignment="Center"  FontSize="18" Name="SpCoef"></TextBox>
+                </Grid>
+            </Border>
+
+            <CheckBox Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" Content="Utiliser les emplacements EasyLogistic" 
+                      VerticalAlignment="Center" VerticalContentAlignment="Center" FontSize="18" Name="EmplacementLogistic"></CheckBox>
+            <CheckBox Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3" Content="Re-Ouvrir la configuration au prochain lancement" 
+                      VerticalAlignment="Center" VerticalContentAlignment="Center"  FontSize="18" Name="ReOuverture" ></CheckBox>
+
+            </Grid>
+        <Button Grid.Row="3" Grid.Column="1" Content="Enregistrer" VerticalAlignment="Center" FontSize="30" FontWeight="Bold" Background="LightGreen" Name="Save" Click="Save_Click"></Button>
+    </Grid>
+</Window>

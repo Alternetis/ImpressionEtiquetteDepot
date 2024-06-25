@@ -1,0 +1,27 @@
+﻿<Window x:Class="ImpressionEtiquetteDepot.Setting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImpressionEtiquetteDepot"
+        mc:Ignorable="d"
+        Title="Paramétre" MinHeight="200" MinWidth="300" Height="200" Width="350" MaxHeight="400" MaxWidth="600">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Content="Etiquette : " VerticalAlignment="Center" HorizontalAlignment="Right" FontWeight="Bold"></Label>
+        <ComboBox Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Margin="3" Name="ComboEtiquette"></ComboBox>
+
+        <Label Grid.Row="1" Content="Imprimante : " VerticalAlignment="Center" HorizontalAlignment="Right" FontWeight="Bold"></Label>
+        <ComboBox Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Margin="3" Name="ComboImprimante"></ComboBox>
+
+        <Button Grid.ColumnSpan="2" Grid.Row="3" Content="Valider" Margin="3"  FontSize="14" FontWeight="Bold" Background="LightGreen" Click="Valider_Click"></Button>
+    </Grid>
+</Window>

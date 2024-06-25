@@ -1,0 +1,9 @@
+<xpml><page quantity='0' pitch='30.2 mm'></xpml>{D0302,0600,0302|}
+<xpml></page></xpml><xpml><page quantity='1' pitch='30.2 mm'></xpml>{C|}
+{XB00;0015,0015,3,1,03,03,08,08,03,0,0105,+0000000000,0,00=[REFERENCE]|}
+{PV00;0129,0151,0028,0028,B,00,B=[REFERENCE]|}
+{PC000;0012,0179,05,05,K,00,B=[DESIGNATION1]|}
+{PC001;0012,0209,05,05,K,00,B=[DESIGNATION2]|}
+{PC002;0178,0277,1,1,J,00,B=[CATEGORIETARIFAIRE_PRIX,T1] [CATEGORIETARIFAIRE_TTC,T1]|}
+{XS;I,0001,0001C4200|}
+<xpml></page></xpml><xpml><end/></xpml>
